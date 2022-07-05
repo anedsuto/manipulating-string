@@ -10,6 +10,10 @@ public class OrderString {
 
     public static void main(String[] args) {
 
+        if (args==null || args.length == 0) {
+            System.out.println("Sends the input parameters");
+            return ;
+        }
         int countText = Integer.parseInt(args[0]);
         for (int i = 0; i < countText; i++) {
             Optional<String> text = Optional.of(args[i + 1]);
